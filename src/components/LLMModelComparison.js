@@ -35,7 +35,8 @@ const LLMModelComparison = ({ patientDetails, apiResult }) => {
     sessionStorage.setItem('reportDataForLlm', JSON.stringify(reportData));
     
     // Rapor sayfasını yeni bir sekmede aç
-    window.open('https://hcc-web-design-api-6.onrender.com/llmrapor', '_blank');
+    window.open('https://hcc-web-design-1-om2o.onrender.com/llmrapor', '_blank');
+
   };
 
   return (
