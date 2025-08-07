@@ -19,7 +19,7 @@ const LLMModelComparison = ({ patientDetails, apiResult }) => {
   const handleBoxClick = () => {
     // Verilerin gelip gelmediğini kontrol et
     if (!patientDetails || !apiResult) {
-      alert("Rapor verisi bulunamadı. Lütfen sayfayı yenileyin.");
+     alert("Rapor verisi bulunamadı. Lütfen sayfayı yenileyin.");
       return;
     }
 
@@ -35,7 +35,7 @@ const LLMModelComparison = ({ patientDetails, apiResult }) => {
     sessionStorage.setItem('reportDataForLlm', JSON.stringify(reportData));
     
     // Rapor sayfasını yeni bir sekmede aç
-    window.open('/llmrapor', '_blank');
+    window.open('https://hcc-web-design-1-om2o.onrender.com/llmrapor', '_blank');
   };
 
   return (
