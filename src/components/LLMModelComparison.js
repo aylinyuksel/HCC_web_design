@@ -35,7 +35,7 @@ const LLMModelComparison = ({ patientDetails, apiResult }) => {
     sessionStorage.setItem('reportDataForLlm', JSON.stringify(reportData));
     
     // Rapor sayfasını yeni bir sekmede aç
-    window.open('/llmrapor', '_blank');
+    window.open('/llmrapor');
 
   };
 

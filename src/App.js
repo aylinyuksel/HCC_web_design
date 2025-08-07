@@ -1,17 +1,18 @@
+// Gerekli kütüphaneleri ve oluşturduğumuz sayfaları import ediyoruz
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // 'BrowserRouter' yerine 'HashRouter' kullanıyoruz
-// Sayfalarınızı import edin
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Bu satırları değiştirin
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import InputPage from './components/InputPage'; 
 import TahminSonuc from './components/TahminSonuc';
-import LLMRaporu from './components/LLMRaporu';
+import LLMRaporu from "./components/LLMRaporu";
 
 import './App.css'; // Genel stil dosyanız
 
 function App() {
   return (
-    // Router'ı HashRouter ile değiştiriyoruz
+    // Router, tüm uygulamanın sayfa yönlendirmelerini yönetir
     <Router>
       <div className="App">
         {/* Routes, farklı yollar (path) arasında geçiş yapmamızı sağlar */}
@@ -21,6 +22,7 @@ function App() {
           <Route path="/input" element={<InputPage />} />
           <Route path="/sonuc" element={<TahminSonuc />} />
           <Route path="/llmrapor" element={<LLMRaporu />} />
+
         </Routes>
       </div>
     </Router>
