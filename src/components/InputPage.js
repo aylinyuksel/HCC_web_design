@@ -182,7 +182,7 @@ const InputPage = () => {
     payload.append("pst", form.PST);
 
     try {
-      const response = await fetch("https://hcc-web-design-api-3.onrender.com/evaluate_hcc_risk", {
+      const response = await fetch("https://hcc-web-design-api-6.onrender.com/evaluate_hcc_risk", {
         method: "POST",
         body: payload,
       });

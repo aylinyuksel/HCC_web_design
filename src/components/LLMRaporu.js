@@ -42,7 +42,7 @@ const LLMRaporu = () => {
         payload.append('doctor_name', storedData.selectedDoctor);
         payload.append("afp_value", parseFloat(storedData.patientDetails.AFP || 0));
 
-        const response = await fetch("https://hcc-web-design-api-3.onrender.com/evaluate_hcc_risk", { method: "POST", body: payload });
+        const response = await fetch("https://hcc-web-design-api-6.onrender.com/evaluate_hcc_risk", { method: "POST", body: payload });
         if (!response.ok) {
             const errorData = await response.json();
             throw new Error(errorData.detail || "Sunucu hatası");

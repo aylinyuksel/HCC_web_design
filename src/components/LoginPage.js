@@ -75,7 +75,7 @@ const LoginPage = () => {
     setError('');
 
     try {
-      const response = await fetch('https://hcc-web-design-api-3.onrender.com/login', {
+      const response = await fetch('https://hcc-web-design-api-6.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
